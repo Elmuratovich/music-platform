@@ -15,7 +15,8 @@ export default class TrackService {
         const track = await this.trackModel.create({...dto, listens: 0});
         return track;
     }
-
+   
+    
     async getAll(): Promise<Track[]> {
         const tracks = await this.trackModel.find();
         return tracks;
