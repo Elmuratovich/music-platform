@@ -11,8 +11,8 @@ import { FileService } from '../file/file.service';
         MongooseModule.forFeature([{name: Track.name, schema: TrackSchema}]),
         MongooseModule.forFeature([{name: Comment.name, schema: CommentSchema}]),
     ],
-    controllers: [TrackController],
+    controllers: [TrackController], 
     providers: [TrackService, FileService],
 })
-
+ 
 export class TrackModule {}
